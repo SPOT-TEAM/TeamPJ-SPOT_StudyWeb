@@ -1,0 +1,1102 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Jua&family=Nanum+Pen+Script&family=Pacifico&display=swap");
+/* 
+font-family: 'Amatic SC', cursive; // footer
+font-family: 'Jua', sans-serif;
+font-family: 'Nanum Pen Script', cursive;
+font-family: 'Pacifico', cursive;  // logo */
+
+body {
+  background-color: #f6f6f6;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jua", sans-serif;
+  min-height: 100vh;
+  margin: auto;
+}
+
+code {
+  font-family: "Jua", sans-serif;
+}
+
+@media (min-width: 650px) {
+  .App {
+    width: 640px;
+  }
+}
+@media (max-width: 650px) {
+  .App {
+    width: 90vw;
+  }
+}
+#root {
+  background-color: #f6f6f6;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.App {
+  margin: auto;
+  background-color: #fff;
+}
+
+/* Header */
+.Navbar {
+  height: 50px;
+  background-color: #f6f6f6;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  
+  overflow: hidden;
+  font-family: "Nanum Pen Script", cursive;
+  margin-bottom: 5px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  justify-content: space-between;
+}
+
+.Navbar .logo {
+  width: 100px;
+  height: 32px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Navbar .logo img {
+  width: 100%;
+}
+
+.Navbar .index {
+  list-style-type: none;
+  display: flex;
+  float: left;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  width: 70%;
+}
+.Navbar .index li {
+  font-size: 15px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: #000 solid 1px;
+  cursor: pointer;
+}
+.Navbar .userState {
+  float: right;
+  width: 100px;
+
+  font-size: 20px;
+
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+
+  margin-left: 5px;
+
+  transition: all 0.2s;
+
+  background-color: #00ae68;
+}
+.Navbar .userState:hover {
+  background: #21852b;
+}
+/* Footer */
+.Footer {
+  font-family: "Amatic SC", cursive;
+  border-top: #000 solid 1px;
+  margin-top: 70px;
+  height: 40px;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+}
+.Footer .footerTeam {
+  font-weight: bold;
+  margin-right: 15px;
+  display: inline-block;
+}
+.Footer .footerComment {
+  margin-right: 8px;
+  display: inline-block;
+}
+.Footer .footerGuide {
+  margin-right: 8px;
+  display: inline-block;
+}
+.Footer .footerDate {
+  margin-right: 20px;
+  display: inline-block;
+}
+.Footer .footerUs {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* LandingPage */
+.LandingPage {
+  padding-top: 15px;
+}
+.LandingPage .LandingPageWrapper {
+  padding-top: 15px;
+}
+.LandingPage .LandingPageWrapper h2 {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.LandingPage .LandingPageWrapper .sampleBanner {
+  width: 100%;
+}
+
+/* LandingPage - swiper */
+.LandingPage .croporateRecruitment {
+  width: 100%;
+  aspect-ratio: 2 / 2.1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.LandingPage .croporateRecruitment .slider .sliderWrapper {
+  position: relative;
+  width: 100%;
+}
+.LandingPage .croporateRecruitment .slider img {
+  width: 100%;
+}
+
+.LandingPage .croporateRecruitment .slider button {
+  position: absolute;
+  bottom: 150px;
+  left: 70px;
+  width: 150px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  border: none;
+  font-family: "Jua", sans-serif;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+}
+
+/* LoginPage */
+.LoginPage {
+  padding-top: 15px;
+}
+.LoginPage .loginWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginPage .signInLogo {
+  width: 40%;
+  margin-top: 40px;
+}
+.LoginPage .signInTitle {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 30px;
+}
+.LoginPage .LoginForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  text-align: center;
+}
+.LoginPage .LoginForm input {
+  width: 250px;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  outline: none;
+}
+.LoginPage .LoginForm input::placeholder {
+  text-align: center;
+}
+.LoginPage .LoginForm button {
+  font-family: "Nanum Pen Script", cursive;
+  width: 200px;
+  margin: auto;
+  color: #fff;
+  font-weight: bold;
+  background-color: #5dc8cd;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.LoginPage .LoginForm button:hover {
+  background-color: #01939a;
+}
+.LoginPage .signUp {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 20px;
+  color: gray;
+}
+
+/* RegisterPage */
+.RegisterPage {
+  padding-top: 15px;
+}
+.RegisterPage .RegisterPageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.RegisterPage .RegisterForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  text-align: center;
+}
+.RegisterPage .RegisterForm input::placeholder {
+  text-align: center;
+}
+.RegisterPage .RegisterForm input {
+  width: 250px;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: gray solid 2px;
+  outline: none;
+}
+.RegisterPage .RegisterForm select {
+  width: 250px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+
+  border-bottom: gray solid 2px;
+  color: gray;
+
+  text-align: center;
+  text-align-last: center;
+}
+
+.RegisterPage .signUpLogo {
+  width: 300px;
+  margin-top: 40px;
+}
+.RegisterPage .signUpTitle {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+.RegisterPage .RegisterPageWrapper button {
+  font-family: "Nanum Pen Script", cursive;
+  width: 200px;
+  margin: auto;
+  color: #fff;
+  font-weight: bold;
+  background-color: #5dc8cd;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.RegisterPage .RegisterPageWrapper button:hover {
+  background-color: #01939a;
+}
+
+/* StudyServicePage */
+.StudyServicePage {
+  padding-top: 15px;
+}
+.StudyServicePage .StudyService {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Nanum Pen Script", cursive;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+.StudyServicePage .StudyService h2 {
+  display: flex;
+  font-size: 25px;
+  vertical-align: middle;
+}
+.StudyServicePage .StudyService button {
+  display: flex;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.StudyServicePage .studyOptionList {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: #000 solid 1px;
+
+  margin-bottom: 10px;
+}
+.StudyServicePage .studyOptionList .studyOptionControl {
+  width: 50%;
+}
+.StudyServicePage .studyOptionList .studyOptionControl .ControlMenu {
+  border: none;
+  text-align: center;
+  border-bottom: gray solid 1px;
+  margin-right: 4px;
+  height: 20px;
+}
+.StudyServicePage .studyOptionList .studyOptionSearch {
+  width: 50%;
+}
+.StudyServicePage .studyOptionList .studyOptionSearch input {
+  width: 75%;
+  height: 23px;
+  border: none;
+  border-bottom: gray solid 1px;
+  display: flex;
+  float: right;
+  margin-right: 5px;
+}
+.StudyServicePage .studyOptionList .studyOptionSearch button {
+  width: 20%;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  float: right;
+  cursor: pointer;
+}
+
+/* StudyServiceItem */
+.StudyServiceItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+.StudyServiceItem .type_img_wrapper img {
+  width: 50px;
+  border-radius: 10px;
+
+  display: flex;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.StudyServiceItem .item_title {
+  display: flex;
+  float: left;
+  width: 55%;
+}
+.StudyServiceItem .info_Wrapper {
+  width: 35%;
+  float: right;
+  text-align: right;
+}
+.StudyServiceItem .info_Wrapper .item_date {
+  display: flex;
+  float: right;
+  width: 45%;
+  justify-content: center;
+}
+.StudyServiceItem .info_Wrapper .item_name {
+  display: flex;
+  float: right;
+  width: 55%;
+  justify-content: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: gray solid 2px;
+}
+/* StudyServiceEditPage */
+.StudyServiceEditPage {
+}
+.StudyServiceEditPage .StudyEditControl {
+  font-family: "Nanum Pen Script", cursive;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.StudyServiceEditPage .StudyEditControl button {
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  width: 80px;
+  cursor: pointer;
+}
+.StudyServiceEditPage .StudyEditControl .ControlMenu {
+  border: none;
+  border-bottom: #000 solid 1px;
+  margin-right: 5px;
+}
+/* StudyServiceEditPage Title */
+.StudyServiceEditPage .StudyTitleImgWrapper {
+  margin-top: 15px;
+}
+
+.StudyServiceEditPage .StudyTitleImgWrapper button {
+  border: none;
+  border-top: #000 solid 1px;
+  cursor: pointer;
+}
+.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox {
+  width: 100%;
+  aspect-ratio: 1920/400;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.StudyServiceEditPage
+  .StudyTitleImgWrapper
+  .StudyTitleImgBox
+  .StudyTitleImg::placeholder {
+  color: #f6f6f6;
+}
+.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox_1 {
+  background-image: url("../public/assets/studyTitleList/studyTitle1.png");
+  background-size: cover;
+}
+.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox_2 {
+  background-image: url("../public/assets/studyTitleList/studyTitle2.png");
+  background-size: cover;
+}
+.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox_3 {
+  background-image: url("../public/assets/studyTitleList/studyTitle3.png");
+  background-size: cover;
+}
+.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImg {
+  font-family: "Nanum Pen Script", cursive;
+  width: 90%;
+  border: none;
+  border-bottom: #000 solid 4px;
+  background-color: transparent;
+  color: white;
+  font-size: 50px;
+}
+.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox_1 .StudyTitleImg {
+  text-align: center;
+}
+.StudyServiceEditPage .StudyTitleImgWrapper .StudyTitleImgBox_2 .StudyTitleImg {
+  color: #000;
+  font-family: "Jua", sans-serif;
+  text-align: center;
+}
+
+.StudyServiceEditPage .StudyTitleTextInput {
+  font-family: "Jua", sans-serif;
+  width: 100%;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  background-color: #ececec;
+}
+.StudyServiceEditPage .StudyTitleContentText textarea {
+  font-family: "Jua", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 300px;
+  resize: vertical;
+  border: none;
+  border-radius: 5px;
+  background-color: #ececec;
+  padding: 20px;
+}
+
+/* Spot */
+.Spot {
+  margin-top: 40px;
+}
+.Spot .SpotWrapper {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.Spot .SpotWrapper .leftItem {
+  width: 50%;
+  border-right: #000 solid 1px;
+  padding-right: 20px;
+}
+.Spot .SpotWrapper .rightItem {
+  width: 50%;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+.Spot .SpotWrapper .rightItem h2 {
+  font-size: 18px;
+  font-family: "Nanum Pen Script", cursive;
+}
+.Spot .SpotWrapper .rightItem img {
+  margin-top: 20px;
+  width: 40%;
+}
+
+/* MessagePage */
+.MessagePage {
+  width: 100%;
+}
+.MessagePage .MessageHead {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-bottom: #000 solid 1px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Nanum Pen Script", cursive;
+  padding-right: 20px;
+}
+.MessagePage .MessageHead h2 {
+  font-size: 25px;
+}
+.MessagePage .MessageHead .MessageControl button {
+  border: none;
+  border-bottom: #000 solid 1px;
+  cursor: pointer;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.MessagePage .MessageHead .MessageControl .controlImportant {
+  border-top-left-radius: 5px;
+  background-color: #f7e781;
+}
+.MessagePage .MessageHead .MessageControl .controlDelete {
+  border-top-right-radius: 5px;
+  background-color: #fc7399;
+}
+
+/* MessageItem */
+.MessagePage .MessageItem {
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  background-color: #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.MessagePage .MessageItem .MessageItem_userInfo_wrapper {
+  width: 25%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.MessagePage .MessageItem .MessageItem_userInfo_wrapper .userDirection {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.MessagePage .MessageItem .MessageItem_userInfo_wrapper .userDirection {
+  width: 40px;
+  height: 15px;
+}
+.MessagePage .MessageItem .item_content_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 55%;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.MessagePage .MessageItem .item_content_wrapper .item_newestContent {
+  font-family: "Jua", sans-serif;
+  font-size: 15px;
+  color: gray;
+}
+.MessagePage .MessageItem .item_content_wrapper .item_content_send {
+  width: 20px;
+}
+.MessagePage .MessageItem .item_info_wrapper {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20%;
+}
+
+.MessagePage .MessageItem .item_info_wrapper .item_important {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+
+  cursor: pointer;
+}
+
+/* messageDetail Page */
+.MessageDetail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.MessageDetail .MessageDetailLeftWrapper {
+  background-color: #f7e781;
+  width: 30%;
+  height: 600px;
+}
+
+.MessageDetail .MessageDetailRightWrapper {
+  background-color: #ececec;
+  width: 70%;
+  height: 600px;
+  padding: 10px;
+}
+.MessageDetail .MessageDetailRightWrapper .MessageInputArea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: #000 solid 1px;
+}
+.MessageDetail .MessageDetailRightWrapper .MessageInputArea .MessageInput {
+  width: 80%;
+  height: 80px;
+  border-radius: 10px;
+  resize: none;
+  border: none;
+  margin-right: 10px;
+}
+.MessageDetail .MessageDetailRightWrapper .MessageInputArea .MessageSend {
+  width: 17%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  background-image: url("../public/assets/message/send.png");
+  background-size: 40px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-color: #5dc8cd;
+}
+
+.MessageDetail .MessageDetailRightWrapper .MessageContentArea {
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 470px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.MessageDetail .MessageDetailRightWrapper .MessageContentWrapper {
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.MessageDetail .MessageDetailLeftWrapper {
+  text-align: center;
+}
+.MessageDetail .MessageDetailLeftWrapper .MessageInfoArea {
+}
+.MessageDetail .MessageDetailLeftWrapper .MessageInfoArea .MessageIngoAreaLogo {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.MessageDetail .MessageDetailLeftWrapper .MessageInfoArea .MessagefromTo {
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.MessageDetail .MessageDetailLeftWrapper .MessageControl button {
+  font-family: 'Jua', sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  color: #ececec;
+  border-radius: 5px;
+}
+.MessageDetail .MessageDetailLeftWrapper .MessageControl .MessageControlAdd {
+  background-color: #8db463;
+  margin-top: 90px;
+}
+.MessageDetail .MessageDetailLeftWrapper .MessageControl .MessageControlDeclare {
+  background-color: #ef404a;
+}
+.MessageDetail .MessageDetailLeftWrapper .MessageControl .MessageControDelete {
+  background-color: #4eb8b9;
+}
+
+/* MessagePiece */
+.MessagePiece {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-family: 'Jua', sans-serif;
+}
+.MessagePiece .MessagePieceInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  border-bottom: #000 solid 1px;
+}
+.MessagePiece .MessagePieceInfo_1{
+  background-color: #53b080;
+}
+.MessagePiece .MessagePieceInfo h4 {
+  color: #fff;
+}
+.MessagePiece .MessagePieceInfo_2{
+  background-color: #fc7399;
+}
+
+.MessagePiece .MessagePieceContent {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #FFF;
+}
+
+
+/* MyPage */
+
+.Mypage .mypage-head{
+  font-family: "Nanum Pen Script", cursive;
+  font-size:30px;
+  padding-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  
+}
+
+.Mypage .mypage-button{
+    width: 20%;
+    height:2rem;
+    color:#5dc8cd;
+    font-family: "Jua", sans-serif;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    outline:0;
+    border:0;
+    text-align:'left'
+}
+
+.Mypage .mypage-button:hover{
+    width: 20%;
+    height:2rem;
+    color:#01939a;
+    font-family: "Jua", sans-serif;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    outline:0;
+    border:0;
+    text-align:'left'
+}
+.Mypage .mypage-info{
+  border: 1px solid gray;
+  border-radius: 0.3rem;
+  width: 600px;
+ margin-left: 20px;
+
+
+}
+
+
+
+/* ChangingInfoPage */
+.ChangingInfoPage{
+  align-items: center;
+  flex-direction: column;
+}
+
+.ChangingInfoPage .changinginfo-head{
+  font-family: "Nanum Pen Script", cursive;
+  font-size:30px;
+  padding-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+.ChangingInfoPage .RegisterPageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ChangingInfoPage .RegisterForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  text-align: center;
+}
+.ChangingInfoPage .RegisterForm input::placeholder {
+  text-align: center;
+}
+.ChangingInfoPage .RegisterForm input {
+  width: 250px;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: gray solid 2px;
+  outline: none;
+}
+.ChangingInfoPage .RegisterForm select {
+  width: 250px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+
+  border-bottom: gray solid 2px;
+  color: gray;
+
+  text-align: center;
+  text-align-last: center;
+}
+
+.ChangingInfoPage .signUpLogo {
+  width: 300px;
+  margin-top: 40px;
+}
+.ChangingInfoPage .signUpTitle {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+.ChangingInfoPage .RegisterPageWrapper button {
+  font-family: "Nanum Pen Script", cursive;
+  width: 100px;
+  margin: auto;
+  color: #fff;
+  font-weight: bold;
+  background-color: #5dc8cd;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.ChangingInfoPage .RegisterPageWrapper button:hover {
+  background-color: #01939a;
+}
+.ChangingInfoPage .change-button{
+  flex-direction: row;
+  
+}
+
+
+/*StudyDetailsPage*/
+
+.StudyServiceDetailsPage .StudyDetailsControl{
+  font-family: "Nanum Pen Script", cursive;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.StudyServiceDetailsPage .StudyDetailsControl button {
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  width: 80px;
+  cursor: pointer;
+}
+
+
+.StudyServiceDetailsPage .StudyTitleImgBox{
+  width: 100%;
+  aspect-ratio: 1920/400;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.StudyServiceDetailsPage .StudyTitleTextInput {
+  font-family: "Jua", sans-serif;
+  width: 100%;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  background-color: #ececec;
+}
+
+.StudyServiceDetailsPage .StudyTitleContentText textarea {
+  font-family: "Jua", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 300px;
+  resize: vertical;
+  border: none;
+  border-radius: 5px;
+  background-color: #ececec;
+  padding: 20px;
+}
+
+.StudyServiceDetailsPage .details-nav{
+  padding-left: 70%;
+}
+
+.StudyServiceDetailsPage .details-nav button {
+  width: 45%;
+  height:2rem;
+  color:#5dc8cd;
+  font-family: "Jua", sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 15px;
+  outline:0;
+  border:0;
+ 
+}
+
+.StudyServiceDetailsPage .details-nav button:hover {
+  width: 45%;
+  height:2rem;
+  color:#01939a;
+  font-family: "Jua", sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 15px;
+  outline:0;
+  border:0;
+ 
+}
+
+
+.StudyServiceDetailsPage .commentWrapper{
+  margin-top: 5%;
+  border-radius: 5px;
+  background-color: #ececec;
+  line-height:80px;
+}
+
+
+
+.StudyServiceDetailsPage .commentWrapper .inputComment {
+  font-family: "Jua", sans-serif;
+  width: 85%;
+  box-sizing: border-box;
+  min-height: 50px;
+  resize: vertical;
+  border: none;
+  padding: 20px;
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+}
+
+.StudyServiceDetailsPage .commentWrapper button{
+  width: 13%;
+  height:2rem;
+  color:#5dc8cd;
+  font-family: "Jua", sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 15px;
+  outline:0;
+  border:0;
+}
+
+.StudyServiceDetailsPage .commentWrapper button:hover{
+  width: 13%;
+  height:2rem;
+  color:#01939a;
+  font-family: "Jua", sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 15px;
+  outline:0;
+  border:0;
+}
+
+
+.StudyServiceDetailsPage .userCommentBox{
+  display: flex;
+  margin-left: 2%;
+  margin-top: 4%;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  width: 100%;
+ 
+  }
+  
+.StudyServiceDetailsPage .userInfo{
+  flex-direction: row;
+  align-items: center
+}
